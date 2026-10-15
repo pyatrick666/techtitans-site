@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Tech Titans — Cyber awareness built for the warehouse floor</title>
+  <desc id="desc">A dark navy and teal social preview graphic for interactive 360-degree warehouse cybersecurity awareness training.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#041b26"/><stop offset="1" stop-color="#0b3a49"/></linearGradient><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#1fbf9f" stroke-opacity=".12"/></pattern></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/><rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="1040" cy="125" r="220" fill="#1fbf9f" opacity=".10"/><circle cx="1080" cy="145" r="140" fill="none" stroke="#1fbf9f" stroke-width="2" stroke-opacity=".35"/>
+  <g transform="translate(82 74)"><rect width="12" height="54" rx="3" fill="#1fbf9f"/><rect x="22" width="12" height="54" rx="3" fill="#d4f542"/><rect x="44" width="12" height="54" rx="3" fill="#1fbf9f"/><text x="78" y="38" fill="#ffffff" font-family="Manrope,Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="2">TECH TITANS</text></g>
+  <text x="82" y="242" fill="#d4f542" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="5">INTERACTIVE 360° TRAINING</text>
+  <text x="78" y="328" fill="#ffffff" font-family="Manrope,Arial,sans-serif" font-size="58" font-weight="800">Cyber awareness</text>
+  <text x="78" y="395" fill="#ffffff" font-family="Manrope,Arial,sans-serif" font-size="58" font-weight="800">for the warehouse floor.</text>
+  <text x="82" y="456" fill="#d6e5e8" font-family="Inter,Arial,sans-serif" font-size="25">Spot the risks. Explore the scene. Build safer habits.</text>
+  <rect x="82" y="510" width="280" height="58" rx="4" fill="#1fbf9f"/><text x="108" y="547" fill="#041b26" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700">EXPLORE THE PROTOTYPE ↗</text>
+  <g transform="translate(950 340)" stroke="#1fbf9f" stroke-width="3" fill="none" opacity=".8"><path d="M0 0h130v150H0z"/><path d="M0 40h130M0 80h130M0 120h130M42 0v150M86 0v150"/><circle cx="66" cy="76" r="28" fill="#1fbf9f" fill-opacity=".14"/><path d="M52 76l10 10 20-23"/></g>
+</svg>
