@@ -4,7 +4,7 @@ A promotional website for the Tech Titans enterprise project, introducing the te
 
 ## Project Links
 
-- **Website:** [techtitans-site]((https://pyatrick666.github.io/techtitans-site/index.html))
+- **Website:** [Open the live website](https://pyatrick666.github.io/techtitans-site/index.html)
 - **Cyber Awareness 360° prototype:** [Open the live prototype](https://abiralpokhrel-learns.github.io/cyberawareprototype/)
 
 ## Overview
