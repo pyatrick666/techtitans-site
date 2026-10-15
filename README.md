@@ -4,7 +4,7 @@ A promotional website for the Tech Titans enterprise project, introducing the te
 
 ## Project Links
 
-- **Website repository:** [techtitans-site](https://github.com/pyatrick666/techtitans-site)
+- **Website:** [techtitans-site]([https://github.com/pyatrick666/techtitans-site](https://pyatrick666.github.io/techtitans-site/index.html))
 - **Cyber Awareness 360° prototype:** [Open the live prototype](https://abiralpokhrel-learns.github.io/cyberawareprototype/)
 
 ## Overview
@@ -53,7 +53,7 @@ No package installation is required for this static website.
 | Team member | Role |
 |---|---|
 | Dipendra Thapa | Project Manager |
-| Pratik Poudel | Programmer |
+| Pratik Poudel | Developer |
 | Younash Sherchan | Analyst |
 | Abiral Pokhrel | Documentation |
 
