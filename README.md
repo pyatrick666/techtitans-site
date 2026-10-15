@@ -1,4 +1,4 @@
-# Tech Titans — Promotional Website (Task B2)
+# Tech Titans — Promotional Website
 
 Static website (HTML, CSS and a little JavaScript).
 
