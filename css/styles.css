@@ -265,7 +265,11 @@ form.contact input:focus, form.contact select:focus, form.contact textarea:focus
 .js .reveal.reveal-ready.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal, .js .reveal.reveal-ready { opacity: 1; transform: none; transition: none; }
+  .reveal, .js .reveal.reveal-ready, .js .reveal.reveal-ready:not(.in) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
   .btn, .card { transition: none; }
 }
 
