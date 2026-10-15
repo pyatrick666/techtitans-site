@@ -4,65 +4,104 @@
 
   var CONTACT_EMAIL = "hello@techtitans.training";
 
-  // Mobile navigation toggle
+  // Progressive enhancement: content stays visible unless JavaScript
+  // successfully prepares the scroll-reveal behaviour.
+  document.documentElement.classList.add("js");
+
+  // Mobile navigation toggle and keyboard support.
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
+
+  function setNavOpen(open, restoreFocus) {
+    if (!toggle || !nav) return;
+    nav.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    if (!open && restoreFocus) toggle.focus();
+  }
+
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
-      var open = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", String(open));
+      setNavOpen(toggle.getAttribute("aria-expanded") !== "true", false);
     });
-    nav.addEventListener("click", function (e) {
-      if (e.target.closest("a")) {
-        nav.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
+
+    nav.addEventListener("click", function (event) {
+      if (event.target.closest("a")) setNavOpen(false, false);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+        setNavOpen(false, true);
+      }
+    });
+
+    document.addEventListener("click", function (event) {
+      if (toggle.getAttribute("aria-expanded") === "true" &&
+          !nav.contains(event.target) && !toggle.contains(event.target)) {
+        setNavOpen(false, false);
       }
     });
   }
 
-  // Footer year
+  // Footer year.
   var yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
 
-  // Scroll reveal (falls back to visible if IntersectionObserver is missing)
+  // Scroll reveal: prepare hidden states only after JS is running.
   var items = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting) {
-          en.target.classList.add("in");
-          io.unobserve(en.target);
+    items.forEach(function (item) { item.classList.add("reveal-ready"); });
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.12 });
-    items.forEach(function (el) { io.observe(el); });
+    items.forEach(function (item) { observer.observe(item); });
   } else {
-    items.forEach(function (el) { el.classList.add("in"); });
+    items.forEach(function (item) { item.classList.add("in"); });
   }
 
-  // Contact form -> opens the visitor's email app with the message filled in
+  // Contact form: validate before opening the visitor's email application.
   var form = document.getElementById("contact-form");
   if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var f = new FormData(form);
-      var name = (f.get("name") || "").toString().trim();
-      var email = (f.get("email") || "").toString().trim();
-      var org = (f.get("org") || "").toString().trim();
-      var topic = (f.get("topic") || "General enquiry").toString();
-      var msg = (f.get("message") || "").toString().trim();
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-      var subject = "Tech Titans enquiry: " + topic;
-      var body =
-        "Hi Tech Titans team,\n\n" + msg + "\n\n" +
-        "— " + name + (org ? "\n" + org : "") + "\nReply to: " + email;
-
-      var href = "mailto:" + CONTACT_EMAIL +
-        "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(body);
-
+      var nameField = form.elements.namedItem("name");
+      var emailField = form.elements.namedItem("email");
+      var messageField = form.elements.namedItem("message");
       var status = document.getElementById("form-status");
-      if (status) status.textContent = "Opening your email app… if nothing happens, email us directly at " + CONTACT_EMAIL + ".";
+
+      nameField.value = nameField.value.trim();
+      emailField.value = emailField.value.trim();
+      messageField.value = messageField.value.trim();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        if (status) status.textContent = "Please complete the required fields and enter a valid email address.";
+        return;
+      }
+
+      if (!nameField.value || !messageField.value) {
+        if (status) status.textContent = "Please enter your name and a message before continuing.";
+        (!nameField.value ? nameField : messageField).focus();
+        return;
+      }
+
+      var org = (form.elements.namedItem("org").value || "").trim();
+      var topic = (form.elements.namedItem("topic").value || "General enquiry").trim();
+      var subject = "Tech Titans enquiry: " + topic;
+      var body = "Hi Tech Titans team,\n\n" + messageField.value + "\n\n— " +
+        nameField.value + (org ? "\n" + org : "") + "\nReply to: " + emailField.value;
+      var href = "mailto:" + CONTACT_EMAIL + "?subject=" +
+        encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+      if (status) {
+        status.textContent = "Opening your email app… the message is not sent until you press Send. If nothing opens, email " + CONTACT_EMAIL + " directly.";
+      }
       window.location.href = href;
     });
   }
