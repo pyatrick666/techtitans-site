@@ -53,9 +53,9 @@ No package installation is required for this static website.
 | Team member | Role |
 |---|---|
 | Dipendra Thapa | Project Manager |
-| Pratik Poudel | Deputy Project Manager |
-| Younash Sherchan | Programmer |
-| Abiral Pokhrel | Analyst |
+| Pratik Poudel | Programmer |
+| Younash Sherchan | Analyst |
+| Abiral Pokhrel | Documentation |
 
 ## Academic Context
 
