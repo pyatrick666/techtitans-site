@@ -1,63 +1,62 @@
-Tech Titans — Cyber Awareness 360°
+# Tech Titans — Cyber Awareness 360°
 
-A promotional website for the Tech Titans enterprise project, introducing the team, its mission, and the Cyber Awareness 360° prototype.
+A promotional website for the Tech Titans enterprise project, introducing the team, its mission, and the Cyber Awareness 360° cybersecurity awareness prototype.
 
-Project Links
+## Project Links
 
-* Website Repository: [techtitans-site](https://github.com/pyatrick666/techtitans-site)
-* Cyber Awareness 360° Prototype: [Open the prototype](https://abiralpokhrel-learns.github.io/cyberawareprototype/)
+- **Website repository:** [techtitans-site](https://github.com/pyatrick666/techtitans-site)
+- **Cyber Awareness 360° prototype:** [Open the live prototype](https://abiralpokhrel-learns.github.io/cyberawareprototype/)
 
-Overview
+## Overview
 
-The website provides a central place to learn about the Tech Titans team and explore the Cyber Awareness 360° project. It introduces the project’s purpose, presents the team and its roles, outlines its key content, and connects visitors to the working prototype.
+The Tech Titans website presents the team and its Cyber Awareness 360° project. It introduces the project’s purpose, shares team information, and directs visitors to the interactive prototype designed to support cybersecurity awareness.
 
-Pages
+## Pages
 
-Page	Description
-index.html	Home page with the team introduction, services section, and mission statement
-demo.html	Prototype page with an embedded demo, demo login information, and an overview of the prototype
-about.html	Team information, project mission, and visual identity
-contact.html	Contact information and an email form that opens the visitor’s email application
+| File | Purpose |
+|---|---|
+| `index.html` | Home page introducing the team, project mission, and services section |
+| `demo.html` | Prototype page with the embedded demo, demo login information, and an overview of the prototype |
+| `about.html` | Team information, project mission, and visual identity |
+| `contact.html` | Contact information and an email form that opens the visitor’s email application |
 
-Features
+## Features
 
-* Clear navigation between the main pages
-* Project introduction and mission statement
-* Team information and role descriptions
-* Link to the Cyber Awareness 360° prototype
-* Contact option using the visitor’s default email application
-* Lightweight static website built with HTML, CSS, and JavaScript
+- Clear navigation between the main pages
+- Introduction to the project and its mission
+- Team information and role descriptions
+- Link to the Cyber Awareness 360° prototype
+- Contact option using the visitor’s default email application
+- Lightweight static website built with HTML, CSS, and JavaScript
 
-Technology Stack
+## Technology Stack
 
-* HTML5 — page structure and content
-* CSS3 — layout and styling
-* JavaScript — interactive behaviour
+- **HTML5** — page structure and content
+- **CSS3** — layout and styling
+- **JavaScript** — interactive behaviour
 
-Run Locally
+## Run Locally
 
 No package installation is required for this static website.
 
 1. Clone the repository:
 
-git clone https://github.com/pyatrick666/techtitans-site.git
-cd techtitans-site
+   ```bash
+   git clone https://github.com/pyatrick666/techtitans-site.git
+   cd techtitans-site
+   ```
 
-2. Open index.html in your browser.
-    Alternatively, use your editor’s Live Server extension for a local preview.
+2. Open `index.html` in your browser. Alternatively, use your editor’s Live Server extension for a local preview.
 
-Team
+## Team
 
-Team Member	Role
-Dipendra Thapa	Project Manager
-Pratik Poudel	Developer
-Younash Sherchan	Analyst
-Abiral Pokhrel	Documentation
+| Team member | Role |
+|---|---|
+| Dipendra Thapa | Project Manager |
+| Pratik Poudel | Deputy Project Manager |
+| Younash Sherchan | Programmer |
+| Abiral Pokhrel | Analyst |
 
-Academic Context
+## Academic Context
 
 Developed as part of the CET257 Enterprise Project at ISMT College, associated with the University of Sunderland.
-
-⸻
-
-Tech Titans — Cyber Awareness 360°
