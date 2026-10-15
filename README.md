@@ -7,6 +7,10 @@ A promotional website for the Tech Titans enterprise project, introducing the te
 - **Website:** [Open the live website](https://pyatrick666.github.io/techtitans-site/index.html)
 - **Cyber Awareness 360° prototype:** [Open the live prototype](https://abiralpokhrel-learns.github.io/cyberawareprototype/)
 
+## Visual Preview
+
+![Tech Titans social preview graphic](assets/img/social-preview.svg)
+
 ## Overview
 
 The Tech Titans website presents the team and its Cyber Awareness 360° project. It introduces the project’s purpose, shares team information, and directs visitors to the interactive prototype designed to support cybersecurity awareness.
