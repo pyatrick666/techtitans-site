@@ -4,8 +4,8 @@ A promotional website for the Tech Titans enterprise project, introducing the te
 
 Project Links
 
-* Website Repository: techtitans-site
-* Cyber Awareness 360° Prototype: Open the prototype
+* Website Repository: [techtitans-site](https://github.com/pyatrick666/techtitans-site)
+* Cyber Awareness 360° Prototype: [Open the prototype](https://abiralpokhrel-learns.github.io/cyberawareprototype/)
 
 Overview
 
