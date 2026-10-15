@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; Book a Demo — Tech Titans</title>
+  <meta name="description" content="Get in touch with Tech Titans or book a free demo of our interactive 360° warehouse cyber awareness training.">
+  <meta name="theme-color" content="#072230">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Tech Titans home">
+        <img src="assets/img/logo.png" alt="Tech Titans" width="192" height="43">
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="index.html#services">Services</a>
+        <a class="link" href="demo.html">Demo</a>
+        <a class="link" href="about.html">About</a>
+        <a class="link" href="contact.html" aria-current="page">Contact</a>
+        <a class="btn btn-primary btn-sm" href="contact.html?topic=Book%20a%20demo">Book a Demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" style="padding:0">
+      <div class="container">
+        <span class="eyebrow lime">Contact</span>
+        <h1>Let's protect your next shift.</h1>
+        <p>Tell us about your warehouse team and we'll show you how the training works. Demos are free.</p>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Get in touch</span>
+          <h2 style="font-size:clamp(1.9rem,3.8vw,2.8rem);margin-top:18px">We'd love to hear from you</h2>
+          <p style="color:var(--muted)">Send a message with the form, or email us directly. We aim to reply within two working days.</p>
+          <ul class="contact-list">
+            <li>
+              <div class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></div>
+              <div><small>Email</small><a href="mailto:hello@techtitans.training?subject=Tech%20Titans%20enquiry">hello@techtitans.training</a></div>
+            </li>
+            <li>
+              <div class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><small>Based in</small><span style="font-weight:600;color:var(--navy)">Butwal · Kathmandu, Nepal</span></div>
+            </li>
+            <li>
+              <div class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="7 4 19 12 7 20 7 4"/></svg></div>
+              <div><small>Try it first</small><a href="demo.html#prototype">Open the live prototype</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact reveal" id="contact-form" novalidate>
+          <label>Your name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>Email address
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>Organisation <span style="font-weight:400;color:var(--muted)">(optional)</span>
+            <input type="text" name="org" autocomplete="organization">
+          </label>
+          <label>I'm interested in
+            <select name="topic" id="topic">
+              <option>Book a demo</option>
+              <option>Training for my warehouse team</option>
+              <option>Custom scenarios</option>
+              <option>General enquiry</option>
+            </select>
+          </label>
+          <label>Message
+            <textarea name="message" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit" style="justify-self:start">Send message
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">This opens your email app with the message ready to send to hello@techtitans.training.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><img src="assets/img/logo-light.png" alt="Tech Titans" width="192" height="43"></a>
+          <p class="tag">Practical cyber awareness for the people who keep warehouses moving.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="mailto:hello@techtitans.training">hello@techtitans.training</a></li>
+            <li>Butwal · Kathmandu, Nepal</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ready to see it in action?</h4>
+          <a class="btn btn-white btn-sm" href="contact.html?topic=Book%20a%20demo">Book a Demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Tech Titans. All rights reserved.</span>
+        <span>Cyber awareness, built for the warehouse floor.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    // Preselect the enquiry type from ?topic=… (used by the "Book a Demo" buttons)
+    (function () {
+      var t = new URLSearchParams(location.search).get("topic");
+      var sel = document.getElementById("topic");
+      if (t && sel) {
+        for (var i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].text === t) { sel.selectedIndex = i; break; }
+        }
+      }
+    })();
+  </script>
+</body>
+</html>

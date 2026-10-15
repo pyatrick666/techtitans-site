@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo &amp; Portfolio — Tech Titans 360° Warehouse Cyber Training</title>
+  <meta name="description" content="Try the Tech Titans interactive 360° warehouse cyber awareness prototype: explore the scene, investigate six hotspots and take the quiz.">
+  <meta name="theme-color" content="#072230">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Tech Titans home">
+        <img src="assets/img/logo.png" alt="Tech Titans" width="192" height="43">
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="index.html#services">Services</a>
+        <a class="link" href="demo.html" aria-current="page">Demo</a>
+        <a class="link" href="about.html">About</a>
+        <a class="link" href="contact.html">Contact</a>
+        <a class="btn btn-primary btn-sm" href="contact.html?topic=Book%20a%20demo">Book a Demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" style="padding:0">
+      <div class="container">
+        <span class="eyebrow lime">Portfolio · Demo</span>
+        <h1>See the training before you book it.</h1>
+        <p>Our working prototype puts your team inside a real warehouse scene. Look around in 360°, investigate six cyber risks and finish with a score.</p>
+      </div>
+    </section>
+
+    <!-- LIVE PROTOTYPE -->
+    <section id="prototype" class="bg-white">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Live prototype</span>
+          <h2>Try the 360° warehouse</h2>
+          <p>Drag to look around and click the glowing markers. On a phone, you can also move the device to look around.</p>
+        </div>
+
+        <div class="device reveal">
+          <div class="bar" aria-hidden="true"><i></i><i></i><i></i><small>abiralpokhrel-learns.github.io/cyberawareprototype</small></div>
+          <iframe
+            src="https://abiralpokhrel-learns.github.io/cyberawareprototype/"
+            title="Tech Titans 360° warehouse cyber awareness prototype"
+            loading="lazy"
+            allow="fullscreen; accelerometer; gyroscope"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="creds reveal">
+          <strong>Demo sign-in:</strong>
+          <span>Trainee <code>trainee</code> / <code>warehouse123</code></span>
+          <span>Admin <code>admin</code> / <code>admin123</code></span>
+        </div>
+
+        <p style="margin-top:26px" class="reveal">
+          <a class="btn btn-dark" href="https://abiralpokhrel-learns.github.io/cyberawareprototype/" target="_blank" rel="noopener">Open the prototype full screen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- WHAT'S INSIDE -->
+    <section id="scenarios" class="bg-mint">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Inside the prototype</span>
+          <h2>Real places. Real risks.</h2>
+          <p>Each scenario is built around what warehouse teams actually meet on shift: suspicious emails at workstations, shared scanners and terminals, and the everyday habits that keep systems safe.</p>
+        </div>
+        <ul class="hotspot-list reveal">
+          <li><strong>Sign in as a trainee</strong><span>Secure log-in with demo accounts, so progress and results are tied to a person.</span></li>
+          <li><strong>Look around in 360°</strong><span>A full warehouse scene. Drag with a mouse, or move your phone to explore.</span></li>
+          <li><strong>Investigate six hotspots</strong><span>Glowing markers are scattered at different heights and angles; click each one to reveal a risk.</span></li>
+          <li><strong>Read the scenario</strong><span>Every hotspot explains what makes the situation dangerous in plain language.</span></li>
+          <li><strong>Answer a short question</strong><span>A quick check on each hotspot turns spotting a risk into knowing how to respond.</span></li>
+          <li><strong>Get your score</strong><span>Finish all six to unlock your results, then restart to improve.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LEARNING OUTCOMES -->
+    <section class="bg-white">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What your team learns</span>
+          <h2>Three skills, five minutes at a time</h2>
+        </div>
+        <div class="grid grid-3">
+          <article class="card plain reveal">
+            <div class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></div>
+            <h3>Spot phishing</h3>
+            <ul class="ticks"><li>Recognise suspicious emails</li><li>Know what not to click</li><li>Report it fast</li></ul>
+          </article>
+          <article class="card plain reveal">
+            <div class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3>Secure shared devices</h3>
+            <ul class="ticks"><li>Protect scanners and terminals</li><li>Lock and log out properly</li><li>Keep inventory systems safe</li></ul>
+          </article>
+          <article class="card plain reveal">
+            <div class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>Build safer habits</h3>
+            <ul class="ticks"><li>Small checks every shift</li><li>Confident, repeatable actions</li><li>Awareness that sticks</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-band">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <span class="eyebrow lime">Want it for your team?</span>
+            <h2>Book a free demo.</h2>
+          </div>
+          <a class="btn btn-white" href="contact.html?topic=Book%20a%20demo">Get in touch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><img src="assets/img/logo-light.png" alt="Tech Titans" width="192" height="43"></a>
+          <p class="tag">Practical cyber awareness for the people who keep warehouses moving.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="mailto:hello@techtitans.training">hello@techtitans.training</a></li>
+            <li>Butwal · Kathmandu, Nepal</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ready to see it in action?</h4>
+          <a class="btn btn-white btn-sm" href="contact.html?topic=Book%20a%20demo">Book a Demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Tech Titans. All rights reserved.</span>
+        <span>Cyber awareness, built for the warehouse floor.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
