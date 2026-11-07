@@ -36,9 +36,9 @@ The site introduces the purpose of the Cyber Awareness 360° project, presents t
 
 ## Technology stack
 
-- **HTML5** — structure and content
-- **CSS3** — layout and visual styling
-- **JavaScript** — client-side interactions
+- HTML5 — structure and content
+- CSS3 — layout and visual styling
+- JavaScript — client-side interactions
 
 ## Run locally
 
