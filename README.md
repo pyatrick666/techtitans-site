@@ -1,66 +1,69 @@
 # Tech Titans — Cyber Awareness 360°
 
-A promotional website for the Tech Titans enterprise project, introducing the team, its mission, and the Cyber Awareness 360° cybersecurity awareness prototype.
+A lightweight project website introducing the Tech Titans team and its **Cyber Awareness 360°** cybersecurity-awareness prototype.
 
-## Project Links
+## Project links
 
-- **Website:** [Open the live website](https://pyatrick666.github.io/techtitans-site/index.html)
+- **Team website:** [Open the live website](https://pyatrick666.github.io/techtitans-site/index.html)
 - **Cyber Awareness 360° prototype:** [Open the live prototype](https://abiralpokhrel-learns.github.io/cyberawareprototype/)
+- **Related source repository:** [360-VR-](https://github.com/pyatrick666/360-VR-)
 
-## Visual Preview
+## Visual preview
 
 ![Tech Titans social preview graphic](assets/img/social-preview.svg)
 
 ## Overview
 
-The Tech Titans website presents the team and its Cyber Awareness 360° project. It introduces the project’s purpose, shares team information, and directs visitors to the interactive prototype designed to support cybersecurity awareness.
+The site introduces the purpose of the Cyber Awareness 360° project, presents the team and its roles, and directs visitors to the interactive prototype. It was created as the public-facing companion site for the CET257 Enterprise Project.
 
 ## Pages
 
 | File | Purpose |
-|---|---|
-| `index.html` | Home page introducing the team, project mission, and services section |
-| `demo.html` | Prototype page with the embedded demo, demo login information, and an overview of the prototype |
+| --- | --- |
+| `index.html` | Project introduction, mission, and services section |
+| `demo.html` | Prototype information and demo access |
 | `about.html` | Team information, project mission, and visual identity |
-| `contact.html` | Contact information and an email form that opens the visitor’s email application |
+| `contact.html` | Contact information and email-app-based contact form |
 
 ## Features
 
-- Clear navigation between the main pages
-- Introduction to the project and its mission
-- Team information and role descriptions
-- Link to the Cyber Awareness 360° prototype
-- Contact option using the visitor’s default email application
-- Lightweight static website built with HTML, CSS, and JavaScript
+- Simple navigation between pages
+- Project mission and team introduction
+- Team member roles
+- Links to the Cyber Awareness 360° prototype
+- Contact form that opens the visitor's default email application
+- Responsive static front-end implementation
 
-## Technology Stack
+## Technology stack
 
-- **HTML5** — page structure and content
-- **CSS3** — layout and styling
-- **JavaScript** — interactive behaviour
+- **HTML5** — structure and content
+- **CSS3** — layout and visual styling
+- **JavaScript** — client-side interactions
 
-## Run Locally
+## Run locally
 
-No package installation is required for this static website.
+No package installation or build step is required.
 
-1. Clone the repository:
+```bash
+git clone https://github.com/pyatrick666/techtitans-site.git
+cd techtitans-site
+```
 
-   ```bash
-   git clone https://github.com/pyatrick666/techtitans-site.git
-   cd techtitans-site
-   ```
-
-2. Open `index.html` in your browser. Alternatively, use your editor’s Live Server extension for a local preview.
+Open `index.html` in a browser, or use a local development server such as VS Code Live Server.
 
 ## Team
 
 | Team member | Role |
-|---|---|
+| --- | --- |
 | Dipendra Thapa | Project Manager |
 | Pratik Poudel | Developer |
 | Younash Sherchan | Analyst |
 | Abiral Pokhrel | Documentation |
 
-## Academic Context
+## Academic context
 
-Developed as part of the CET257 Enterprise Project at ISMT College, associated with the University of Sunderland.
+Developed as part of the **CET257 Enterprise Project** at ISMT College, associated with the University of Sunderland.
+
+## Author
+
+**Pratik Poudel** · [GitHub](https://github.com/pyatrick666)
